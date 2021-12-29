@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    		<title>Rockets | Rockets</title>
+		<link rel="stylesheet" href="style.css" />
+  	</head>
+  	<body>
+    		<!--Navbar-->
+    		<ul class="navbar__container">
+      		<a href="index.html"><li class="navbar__item">
+        		Home
+	      	</li></a>
+       		<a href="sign-up.html"><li class="navbar__item">
+        		Sign Up
+         		</li>
+		</a>
+       		<a href="about.html"><li class="navbar__item">
+        		About
+    			</li>
+		</a>
+		</ul>
+   		<!--End Navbar-->
+		<!--Main-->
+		<div class="signup__container">
+			<form>
+				<label for="email">What is your e-mail? </label>
+				<input type="text" name="email" id="email"><br /><br />
+
+				<label for="email">What is your name? </label>
+				<input type="text" name="name" id="name"><br /><br />
+
+				<p>Check all that apply:</p>
+				<input type="checkbox" id="q1" name="q1" value="experience">
+				<label for="q1"> I have not had much experience with nature</label><br>
+				<input type="checkbox" id="q2" name="q2" value="nature">
+				<label for="q2"> I think nature is boring</label><br>
+				<input type="checkbox" id="q3" name="q3" value="tadpole">
+				<label for="q3"> I have killed a tadpole</label><br /><br />
+				<input class="submit__button" type="button" value="Submit" onclick="checkValue();" />
+			</form>
+		</div>
+		<script type="text/javascript">
+				function checkValue() {
+					var email = document.getElementById("email").value;
+					var name = document.getElementById("name").value;
+					let q1 = document.getElementById("q1");
+					let q2 = document.getElementById("q2");
+					let q3 = document.getElementById("q3");
+					if (q1.checked) {
+						q1 = "have not"
+					}
+					else {
+						q1 = "have"
+					}
+					if (q2.checked) {
+						q2 = "do"
+					}
+					else {
+						q2 = "do not"
+					}
+					if (q3.checked) {
+						q3 = "have"
+					}
+					else {
+						q3 = "have not"
+					}
+					message = "My name is "+name+" ("+email+"). I "+q1+" had experience with nature. I "+q2+" think nature is boring. I "+q3+" killed a tadpole or two."
+					window.open('mailto:ebensema@icloud.com?subject=Rockets Application&body='+message);
+				}
+			</script>
+		<!--End Main-->
+		<!--Footer-->
+		<div class="footer">
+			&copy;Rockets 2022
+		</div>
+		<!--End Footer-->
+  	</body>
+</html>
