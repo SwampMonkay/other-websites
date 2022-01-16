@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | Monebay</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<script src="script.js" rel="text/javascript"></script> 
+	</head>
+	<body>
+		<!--Navbar-->
+		<div class="navbar__container">
+			<div class="navbar__content">
+			<ul class="navbar__menu">
+				<a class="navbar__link" href="index.html">
+					<li class="navbar__item">
+						Home
+					</li>
+				</a>
+				<a class="navbar__link" href="sell.html">
+					<li class="navbar__item">
+						Sell
+					</li>
+				</a>
+			</ul>
+			</div>
+		</div>
+		<!--End Navbar-->
+		<!--Main-->
+		<div class="sell__container">
+			<div class="sell__content">
+				<form>
+					<label for="name">What is your name?</label>
+					<input type="text" id="name" placeholder="Name...">
+					<br />
+					<br />
+					<label for="selling">What card are you selling?</label>
+					<input type="text" id="selling" placeholder="Card...">
+					<br />
+					<br />
+					<label for="money">How much money?</label>
+					<input type="number" id="money" placeholder="Money...">
+					<p style="font-size: 0.7rem;">NOTE: Some money will go to taxes, 30% to the business owner, and the rest to you.</p>
+					<br />
+					<input type="submit" id="submit" value="Submit" onclick="sendEmail();">
+				</form>
+				<br />
+				<p style="color:#930000; font-size: 1.1rem;">
+					If you don't attatch a picture of you card to the email, then your request won't be fullfilled.
+				</p> 
+			</div>
+		</div>
+		<!--End Main-->
+		<!--Footer-->
+			<div class="footer__container">
+				<p>&copy;Copyright MtL, business Eli</p>
+			</div>
+		<!--End Footer-->
+	</body>
+</html>
