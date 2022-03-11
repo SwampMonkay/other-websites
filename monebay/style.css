@@ -36,7 +36,7 @@ body {
 .navbar__content {
 	display: flex;
     	justify-content: space-between;
-    	height: 80px;
+    	height: 40px;
     	z-index: 1;
     	width: 100%;
     	max-width: 1300px;
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar__item {
-	height: 80px;
+	height: 40px;
 }
 
 .navbar__link {
@@ -88,12 +88,23 @@ body {
 	height: 90%;
 	text-align: center;
 	padding: 0 30px;
+	background: gray;
 }
 
 .sell__content {
 	border-radius: 20px;
 	padding: 40px;
 	background-color: #80808080;
+}
+
+.stuffamon__left {
+	float: left;
+	padding: 40px;
+	margin-right: 20%;
+}
+
+.spacer {
+	height: 10px;
 }
 
 /* End Main */
