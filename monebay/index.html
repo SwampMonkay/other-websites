@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:site_name" content="Home | Monebay" />
+		<meta
+		  property="og:title"
+		  content="Home | Monebay"
+		>
+		<meta
+		  name="description"
+		  content="Monebay homepage"
+		>
+		<meta name="keywords" content="monebay, business, eli, garms, stuffamon, buy, sell, trade">
+		<meta name="author" content="Boden Bensema">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://swampmonkay.github.io/other-websites/monebay/">
 		<title>Home | Monebay</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" type="image/png" href="favicon.png" />
-		
-		<meta name="keywords" content="monebay, Eli, Eli's business, stuffamon, Garms, whats eli up to">
-		<meta name="author" content="Boden Bensema">
-		<meta property="og:type" content="website">
+		<script src="script.js" rel="text/javascript"></script>
 	</head>
 	<body>
 		<!--Navbar-->
@@ -31,9 +42,19 @@
 		<div class="spacer"></div>
 		<!--Main-->
 		<div class="logo"></div>
-		<div class="sell_container">
-			<img src="img/ribbon_bear_ella.png" id="ribbon_bear_ella" class="stuffamon__left">
-			</img>
+		<div class="buy__container">
+			<div class="buy__content__left">
+				<img src="img/ribbon_bear_ella.png" id="ribbon_bear_ella" class="stuffamon__left">
+				</img>
+				
+			</div>
+		</div>
+		<div class="buy__container">
+			<div class="buy__content__left">
+				<img src="img/ribbon_bear_ella.png" id="ribbon_bear_ella" class="stuffamon__left">
+				</img>
+				<button onclick="send_request" class="buy__btn">Buy</button>
+			</div>
 		</div>
 		<!--End Main-->
 		<div class="spacer"></div>
